@@ -1,0 +1,2896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Whitefield Cascading Failure Simulator</title>
+
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #111827;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
+#map {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.title-panel {
+
+    position: absolute;
+
+    top: 15px;
+    left: 65px;
+
+    z-index: 1000;
+
+    background:
+        rgba(17, 24, 39, 0.94);
+
+    padding: 14px 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 20px
+        rgba(0,0,0,0.35);
+}
+
+.title-panel h1 {
+
+    margin: 0;
+
+    font-size: 21px;
+}
+
+.title-panel p {
+
+    margin: 5px 0 0;
+
+    font-size: 13px;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================================
+   CONTROL PANEL
+========================================================= */
+
+.control-panel {
+
+    position: absolute;
+
+    top: 100px;
+    right: 20px;
+
+    width: 330px;
+
+    max-height: calc(100vh - 120px);
+
+    overflow-y: auto;
+
+    z-index: 1000;
+
+    background:
+        rgba(17, 24, 39, 0.96);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 5px 25px
+        rgba(0,0,0,0.4);
+}
+
+.control-panel h2 {
+
+    margin-top: 0;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   EVENT BOX
+========================================================= */
+
+.event-box {
+
+    background: #1f2937;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+}
+
+.event-label {
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+}
+
+.event-name {
+
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+button {
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+#startBtn {
+
+    background: #dc2626;
+
+    color: white;
+}
+
+#startBtn:hover {
+
+    background: #b91c1c;
+}
+
+#startBtn:disabled {
+
+    background: #7f1d1d;
+
+    cursor: not-allowed;
+}
+
+#resetBtn {
+
+    background: #374151;
+
+    color: white;
+}
+
+#resetBtn:hover {
+
+    background: #4b5563;
+}
+
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+.metrics {
+
+    margin-top: 16px;
+}
+
+.metric {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,0.08);
+}
+
+.metric-name {
+
+    color: #cbd5e1;
+
+    font-size: 13px;
+}
+
+.metric-value {
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+.danger {
+
+    color: #ef4444;
+}
+
+.warning {
+
+    color: #f59e0b;
+}
+
+.success {
+
+    color: #22c55e;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+#status {
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline-container {
+
+    margin-top: 18px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.1);
+
+    padding-top: 14px;
+}
+
+.timeline-title {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+#timeline {
+
+    max-height: 190px;
+
+    overflow-y: auto;
+
+    padding-right: 5px;
+}
+
+.timeline-empty {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    padding: 5px 0;
+}
+
+.timeline-item {
+
+    position: relative;
+
+    padding-left: 22px;
+
+    padding-bottom: 12px;
+
+    border-left:
+        2px solid
+        #374151;
+
+    margin-left: 5px;
+}
+
+.timeline-item::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -6px;
+
+    top: 2px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #ef4444;
+
+    border:
+        2px solid
+        #111827;
+}
+
+.timeline-time {
+
+    color: #f59e0b;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.timeline-name {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-top: 2px;
+}
+
+.timeline-type {
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.legend {
+
+    position: absolute;
+
+    bottom: 25px;
+    left: 20px;
+
+    z-index: 1000;
+
+    background:
+        rgba(17, 24, 39, 0.94);
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+}
+
+.legend-title {
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.legend-row {
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 5px 0;
+}
+
+.legend-dot {
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    margin-right: 8px;
+
+    border: 2px solid white;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+#loading {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(17,24,39,0.96);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+.control-panel::-webkit-scrollbar,
+#timeline::-webkit-scrollbar {
+
+    width: 5px;
+}
+
+.control-panel::-webkit-scrollbar-thumb,
+#timeline::-webkit-scrollbar-thumb {
+
+    background: #4b5563;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 700px) {
+
+    .control-panel {
+
+        width: 280px;
+
+        right: 10px;
+
+        top: 80px;
+    }
+
+    .title-panel {
+
+        left: 50px;
+
+        max-width: 250px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     LOADING
+========================================================= -->
+
+<div id="loading">
+
+    Loading Whitefield network...
+
+</div>
+
+
+<!-- =========================================================
+     MAP
+========================================================= -->
+
+<div id="map"></div>
+
+
+<!-- =========================================================
+     TITLE
+========================================================= -->
+
+<div class="title-panel">
+
+    <h1>
+        ⚡ Whitefield Cascading Failure Simulator
+    </h1>
+
+    <p>
+        OpenStreetMap-based infrastructure resilience simulation
+    </p>
+
+</div>
+
+
+<!-- =========================================================
+     CONTROL PANEL
+========================================================= -->
+
+<div class="control-panel">
+
+    <h2>
+        Cascade Simulation
+    </h2>
+
+
+    <div class="event-box">
+
+        <div class="event-label">
+            Initial Event
+        </div>
+
+        <div
+            class="event-name"
+            id="initialEvent"
+        >
+            Loading...
+        </div>
+
+    </div>
+
+
+    <button id="startBtn">
+
+        ▶ START CASCADE
+
+    </button>
+
+
+    <button id="resetBtn">
+
+        ↻ RESET
+
+    </button>
+
+
+    
+
+<!-- =====================================================
+         TIMELINE
+    ====================================================== -->
+
+    <div class="timeline-container">
+
+        <div class="timeline-title">
+
+            Cascade Timeline
+
+        </div>
+
+
+        <div id="timeline">
+
+            <div class="timeline-empty">
+
+                Waiting for simulation...
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- =====================================================
+         METRICS
+    ====================================================== -->
+
+    <div class="metrics">
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Simulation Step
+            </span>
+
+            <span
+                class="metric-value"
+                id="step"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Failed Components
+            </span>
+
+            <span
+                class="metric-value danger"
+                id="failed"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Hospitals
+            </span>
+
+            <span
+                class="metric-value danger"
+                id="hospitals"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Police Stations
+            </span>
+
+            <span
+                class="metric-value danger"
+                id="police"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Fire Stations
+            </span>
+
+            <span
+                class="metric-value danger"
+                id="fire"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Schools
+            </span>
+
+            <span
+                class="metric-value warning"
+                id="schools"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Power Infrastructure
+            </span>
+
+            <span
+                class="metric-value danger"
+                id="power"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Roads Affected
+            </span>
+
+            <span
+                class="metric-value warning"
+                id="roads"
+            >
+                0
+            </span>
+
+        </div>
+
+
+        <div class="metric">
+
+            <span class="metric-name">
+                Severity
+            </span>
+
+            <span
+                class="metric-value"
+                id="severity"
+            >
+                0 / 100
+            </span>
+
+        </div>
+
+
+    </div>
+
+<div id="status">
+
+        Ready
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     LEGEND
+========================================================= -->
+
+<div class="legend">
+
+    <div class="legend-title">
+
+        Infrastructure Status
+
+    </div>
+
+
+    <div class="legend-row">
+
+        <div
+            class="legend-dot"
+            style="background:#22c55e"
+        ></div>
+
+        Working
+
+    </div>
+
+
+    <div class="legend-row">
+
+        <div
+            class="legend-dot"
+            style="background:#f59e0b"
+        ></div>
+
+        Degraded
+
+    </div>
+
+
+    <div class="legend-row">
+
+        <div
+            class="legend-dot"
+            style="background:#ef4444"
+        ></div>
+
+        Failed
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     LEAFLET JS
+========================================================= -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<script>
+
+
+// =========================================================
+// GLOBAL VARIABLES
+// =========================================================
+
+let network = null;
+
+let simulation = null;
+
+let map = null;
+
+let markers = {};
+
+let failedMarkers = {};
+
+let roadLayers = [];
+
+let animationTimer = null;
+
+let simulationRunning = false;
+
+let currentStep = 0;
+
+let selectedInitialFailure = null;
+
+let activeCascadeEvents = null;
+
+let activeCascadeMetrics = null;
+
+
+// =========================================================
+// LOAD DATA
+// =========================================================
+
+async function loadData() {
+
+    try {
+
+        const networkResponse =
+            await fetch(
+                "whitefield_network.json"
+            );
+
+
+        if (!networkResponse.ok) {
+
+            throw new Error(
+                "Could not load whitefield_network.json"
+            );
+
+        }
+
+
+        network =
+            await networkResponse.json();
+
+
+        const simulationResponse =
+            await fetch(
+                "simulation_output.json"
+            );
+
+
+        if (!simulationResponse.ok) {
+
+            throw new Error(
+                "Could not load simulation_output.json"
+            );
+
+        }
+
+
+        simulation =
+            await simulationResponse.json();
+
+
+        console.log(
+            "Network loaded:",
+            network
+        );
+
+
+        console.log(
+            "Simulation loaded:",
+            simulation
+        );
+
+
+        initializeMap();
+
+        drawRoads();
+
+        drawFacilities();
+
+        setupSimulation();
+
+
+        document
+            .getElementById("loading")
+            .style.display = "none";
+
+    }
+
+    catch(error) {
+
+        console.error(error);
+
+
+        document
+            .getElementById("loading")
+            .innerHTML = `
+
+                <div style="text-align:center">
+
+                    <h2>
+                        ❌ Error loading data
+                    </h2>
+
+                    <p>
+                        ${error.message}
+                    </p>
+
+                    <p style="font-size:14px">
+
+                        Make sure you are running:
+
+                        <br><br>
+
+                        <b>
+                            python -m http.server 8000
+                        </b>
+
+                    </p>
+
+                </div>
+
+            `;
+
+    }
+
+}
+
+
+// =========================================================
+// INITIALIZE MAP
+// =========================================================
+
+function initializeMap() {
+
+    const center =
+        network.metadata.center;
+
+
+    map =
+        L.map(
+            "map",
+            {
+
+                preferCanvas: true,
+
+                zoomControl: true
+
+            }
+        );
+
+
+    L.tileLayer(
+
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+
+        {
+
+            maxZoom: 19,
+
+            attribution:
+                "&copy; OpenStreetMap contributors"
+
+        }
+
+    ).addTo(map);
+
+
+    map.setView(
+
+        [
+            center.latitude,
+            center.longitude
+        ],
+
+        13
+
+    );
+
+}
+
+
+// =========================================================
+// DRAW ROADS
+// =========================================================
+
+function drawRoads() {
+
+    const edges =
+        network.road_network.edges;
+
+
+    console.log(
+        "Drawing roads:",
+        edges.length
+    );
+
+
+    const canvasRenderer =
+        L.canvas({
+
+            padding: 0.5
+
+        });
+
+
+    edges.forEach(
+
+        road => {
+
+            if (
+                !road.geometry ||
+                road.geometry.length < 2
+            ) {
+
+                return;
+
+            }
+
+
+            const coordinates =
+                road.geometry.map(
+
+                    point => [
+
+                        point[1],
+                        point[0]
+
+                    ]
+
+                );
+
+
+            let weight = 1;
+
+
+            if (
+                road.highway &&
+                (
+                    road.highway.includes(
+                        "primary"
+                    )
+                    ||
+                    road.highway.includes(
+                        "trunk"
+                    )
+                    ||
+                    road.highway.includes(
+                        "motorway"
+                    )
+                )
+            ) {
+
+                weight = 2;
+
+            }
+
+
+            const line =
+                L.polyline(
+
+                    coordinates,
+
+                    {
+
+                        renderer:
+                            canvasRenderer,
+
+                        color:
+                            "#2563eb",
+
+                        weight:
+                            weight,
+
+                        opacity:
+                            0.35,
+
+                        interactive:
+                            false
+
+                    }
+
+                );
+
+
+            line.addTo(map);
+
+
+            roadLayers.push({
+
+                id:
+                    String(road.id),
+
+                layer:
+                    line,
+
+                road:
+                    road
+
+            });
+
+        }
+
+    );
+
+}
+
+
+// =========================================================
+// CREATE FACILITY MARKER
+// =========================================================
+
+function createFacilityMarker(
+    facility,
+    color,
+    icon
+) {
+
+    if (
+        facility.latitude === null ||
+        facility.longitude === null
+    ) {
+
+        return null;
+
+    }
+
+
+    const marker =
+        L.circleMarker(
+
+            [
+                facility.latitude,
+                facility.longitude
+            ],
+
+            {
+
+                radius: 7,
+
+                fillColor:
+                    color,
+
+                color:
+                    "#ffffff",
+
+                weight: 2,
+
+                fillOpacity:
+                    0.95
+
+            }
+
+        );
+
+
+    // IMPORTANT:
+    // Save original facility data
+
+    marker.facilityData =
+        facility;
+
+
+    marker.originalColor =
+        color;
+
+
+    marker.originalRadius =
+        7;
+
+
+    marker.icon =
+        icon;
+
+
+    marker.bindPopup(
+
+        `
+
+        <div style="min-width:180px">
+
+            <b>
+                ${icon}
+                ${facility.name}
+            </b>
+
+            <br><br>
+
+            <b>Type:</b>
+            ${facility.type}
+
+            <br>
+
+            <b>Status:</b>
+
+            <span class="status-text">
+
+                WORKING
+
+            </span>
+
+            <br>
+
+            <b>Latitude:</b>
+            ${facility.latitude}
+
+            <br>
+
+            <b>Longitude:</b>
+            ${facility.longitude}
+
+        </div>
+
+        `
+
+    );
+
+
+    marker.on(
+
+        "contextmenu",
+
+        event => {
+
+            if (event.originalEvent) {
+
+                event.originalEvent.preventDefault();
+
+            }
+
+            selectInitialFailure(
+                facility
+            );
+
+        }
+
+    );
+
+
+    marker.addTo(map);
+
+
+    markers[
+        facility.id
+    ] = marker;
+
+
+    return marker;
+
+}
+
+
+// =========================================================
+// DRAW FACILITIES
+// =========================================================
+
+function drawFacilities() {
+
+    const facilities =
+        network.facilities;
+
+
+    // -----------------------------------------------------
+    // HOSPITALS
+    // -----------------------------------------------------
+
+    facilities.hospitals.forEach(
+
+        hospital => {
+
+            createFacilityMarker(
+
+                hospital,
+
+                "#22c55e",
+
+                "🏥"
+
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // POLICE
+    // -----------------------------------------------------
+
+    facilities.police_stations.forEach(
+
+        station => {
+
+            createFacilityMarker(
+
+                station,
+
+                "#3b82f6",
+
+                "👮"
+
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // FIRE
+    // -----------------------------------------------------
+
+    facilities.fire_stations.forEach(
+
+        station => {
+
+            createFacilityMarker(
+
+                station,
+
+                "#f97316",
+
+                "🚒"
+
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // SCHOOLS
+    // -----------------------------------------------------
+
+    facilities.schools.forEach(
+
+        school => {
+
+            createFacilityMarker(
+
+                school,
+
+                "#a855f7",
+
+                "🏫"
+
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // POWER INFRASTRUCTURE
+    // -----------------------------------------------------
+
+    facilities.power_infrastructure.forEach(
+
+        power => {
+
+            createFacilityMarker(
+
+                power,
+
+                "#eab308",
+
+                "⚡"
+
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // CRITICAL HOODY POWER STATION
+    // -----------------------------------------------------
+
+    const hoody =
+        facilities.critical_power_station;
+
+
+    const marker =
+        createFacilityMarker(
+
+            hoody,
+
+            "#16a34a",
+
+            "⚡"
+
+        );
+
+
+    if (marker) {
+
+        marker.setRadius(11);
+
+        marker.originalRadius =
+            11;
+
+        marker.originalColor =
+            "#16a34a";
+
+    }
+
+
+    document
+        .getElementById(
+            "initialEvent"
+        )
+        .innerText =
+        hoody.name;
+
+}
+
+
+// =========================================================
+// SELECT INITIAL FAILURE FROM MAP RIGHT CLICK
+// =========================================================
+
+function selectInitialFailure(facility) {
+
+    selectedInitialFailure =
+        facility;
+
+    activeCascadeEvents =
+        buildCascadeFromFacility(
+            facility
+        );
+
+    activeCascadeMetrics =
+        buildMetricsFromEvents(
+            activeCascadeEvents
+        );
+
+    resetSimulation();
+
+    const marker =
+        markers[
+            facility.id
+        ];
+
+    if (marker) {
+
+        marker.setStyle({
+
+            color:
+                "#facc15",
+
+            weight:
+                5
+
+        });
+
+        marker.setRadius(
+            Math.max(
+                marker.originalRadius || 7,
+                12
+            )
+        );
+
+        marker.openPopup();
+
+    }
+
+    document
+        .getElementById("initialEvent")
+        .innerText =
+        facility.name;
+
+    document
+        .getElementById("status")
+        .innerText =
+        "Selected initial failure: " + facility.name +
+        ". Press START CASCADE.";
+
+}
+
+
+// =========================================================
+// BUILD FRONTEND CASCADE FROM SELECTED FACILITY
+// =========================================================
+
+function buildCascadeFromFacility(facility) {
+
+    const allFacilities =
+        Object.values(markers)
+            .map(marker => marker.facilityData)
+            .filter(item => item && item.id);
+
+    const sourceType =
+        facility.type;
+
+    const candidates =
+        allFacilities
+            .filter(item => item.id !== facility.id)
+            .map(item => ({
+
+                facility:
+                    item,
+
+                distance:
+                    distanceKm(
+                        facility.latitude,
+                        facility.longitude,
+                        item.latitude,
+                        item.longitude
+                    )
+
+            }))
+            .filter(item => Number.isFinite(item.distance));
+
+    let radiusKm =
+        0.85;
+
+    let limit =
+        4;
+
+    if (
+        sourceType === "POWER_STATION" ||
+        sourceType === "POWER_INFRASTRUCTURE"
+    ) {
+
+        radiusKm =
+            1.25;
+
+        limit =
+            6;
+
+    }
+
+    const typePriority = {
+
+        HOSPITAL: 1,
+        FIRE_STATION: 2,
+        POLICE_STATION: 3,
+        POWER_INFRASTRUCTURE: 4,
+        POWER_STATION: 4,
+        SCHOOL: 5
+
+    };
+
+    const impacted =
+        candidates
+            .filter(item => item.distance <= radiusKm)
+            .sort((a, b) => {
+
+                const priorityA =
+                    typePriority[a.facility.type] || 9;
+
+                const priorityB =
+                    typePriority[b.facility.type] || 9;
+
+                if (priorityA !== priorityB) {
+
+                    return priorityA - priorityB;
+
+                }
+
+                return a.distance - b.distance;
+
+            })
+            .slice(0, limit);
+
+    const backup =
+        candidates
+            .sort((a, b) => a.distance - b.distance)
+            .slice(0, Math.max(0, 3 - impacted.length));
+
+    const combined =
+        [...impacted];
+
+    backup.forEach(item => {
+
+        if (
+            !combined.some(
+                existing => existing.facility.id === item.facility.id
+            )
+        ) {
+
+            combined.push(item);
+
+        }
+
+    });
+
+    const events = [
+
+        {
+
+            step:
+                0,
+
+            event:
+                "INITIAL_FAILURE",
+
+            node_id:
+                facility.id,
+
+            name:
+                facility.name,
+
+            type:
+                facility.type,
+
+            latitude:
+                facility.latitude,
+
+            longitude:
+                facility.longitude
+
+        }
+
+    ];
+
+    combined.forEach((item, index) => {
+
+        events.push({
+
+            step:
+                index < 3 ? 1 : 2,
+
+            event:
+                getCascadeReason(
+                    sourceType,
+                    item.facility.type
+                ),
+
+            node_id:
+                item.facility.id,
+
+            name:
+                item.facility.name,
+
+            type:
+                item.facility.type,
+
+            source_node:
+                facility.id,
+
+            distance_m:
+                Math.round(item.distance * 1000),
+
+            latitude:
+                item.facility.latitude,
+
+            longitude:
+                item.facility.longitude
+
+        });
+
+    });
+
+    return events;
+
+}
+
+
+function getCascadeReason(sourceType, targetType) {
+
+    if (
+        sourceType === "POWER_STATION" ||
+        sourceType === "POWER_INFRASTRUCTURE"
+    ) {
+
+        return "POWER_DEPENDENCY_FAILURE";
+
+    }
+
+    if (
+        targetType === "POWER_STATION" ||
+        targetType === "POWER_INFRASTRUCTURE"
+    ) {
+
+        return "INFRASTRUCTURE_BACKFEED_RISK";
+
+    }
+
+    return "LOCAL_ACCESS_FAILURE";
+
+}
+
+
+function buildMetricsFromEvents(events) {
+
+    const metrics = {
+
+        total_failed:
+            events.length,
+
+        failed_hospitals:
+            0,
+
+        failed_police_stations:
+            0,
+
+        failed_fire_stations:
+            0,
+
+        failed_schools:
+            0,
+
+        failed_power_infrastructure:
+            0,
+
+        affected_roads:
+            Math.min(
+                25,
+                events.length * 4
+            ),
+
+        cascade_steps:
+            Math.max(
+                ...events.map(event => event.step)
+            ),
+
+        severity_score:
+            0
+
+    };
+
+    events.forEach(event => {
+
+        if (event.type === "HOSPITAL") {
+
+            metrics.failed_hospitals += 1;
+
+        } else if (event.type === "POLICE_STATION") {
+
+            metrics.failed_police_stations += 1;
+
+        } else if (event.type === "FIRE_STATION") {
+
+            metrics.failed_fire_stations += 1;
+
+        } else if (event.type === "SCHOOL") {
+
+            metrics.failed_schools += 1;
+
+        } else if (
+            event.type === "POWER_STATION" ||
+            event.type === "POWER_INFRASTRUCTURE"
+        ) {
+
+            metrics.failed_power_infrastructure += 1;
+
+        }
+
+    });
+
+    metrics.severity_score =
+        Math.min(
+            100,
+            metrics.failed_hospitals * 12 +
+            metrics.failed_fire_stations * 14 +
+            metrics.failed_police_stations * 10 +
+            metrics.failed_power_infrastructure * 16 +
+            metrics.failed_schools * 4 +
+            Math.min(25, metrics.affected_roads * 2)
+        );
+
+    return metrics;
+
+}
+
+
+function getActiveCascadeEvents() {
+
+    if (activeCascadeEvents) {
+
+        return activeCascadeEvents;
+
+    }
+
+    return simulation.cascade.events;
+
+}
+
+
+function getActiveMetrics() {
+
+    if (activeCascadeMetrics) {
+
+        return activeCascadeMetrics;
+
+    }
+
+    return simulation.metrics;
+
+}
+
+// =========================================================
+// SETUP SIMULATION
+// =========================================================
+
+function setupSimulation() {
+
+    updateMetrics(0);
+
+}
+
+
+// =========================================================
+// GET EVENT ICON
+// =========================================================
+
+function getEventIcon(type) {
+
+    switch(type) {
+
+        case "HOSPITAL":
+
+            return "🏥";
+
+        case "POLICE_STATION":
+
+            return "👮";
+
+        case "FIRE_STATION":
+
+            return "🚒";
+
+        case "SCHOOL":
+
+            return "🏫";
+
+        case "POWER_INFRASTRUCTURE":
+
+            return "⚡";
+
+        case "POWER_STATION":
+
+            return "⚡";
+
+        default:
+
+            return "🔴";
+
+    }
+
+}
+
+
+// =========================================================
+// ADD TIMELINE EVENT
+// =========================================================
+
+function addTimelineEvent(event) {
+
+    const timeline =
+        document.getElementById(
+            "timeline"
+        );
+
+
+    const empty =
+        timeline.querySelector(
+            ".timeline-empty"
+        );
+
+
+    if (empty) {
+
+        empty.remove();
+
+    }
+
+
+    const item =
+        document.createElement(
+            "div"
+        );
+
+
+    item.className =
+        "timeline-item";
+
+
+    const time =
+        (
+            event.step * 1.2
+        ).toFixed(1);
+
+
+    item.innerHTML = `
+
+        <div class="timeline-time">
+
+            T+${time}s
+
+        </div>
+
+
+        <div class="timeline-name">
+
+            ${getEventIcon(event.type)}
+
+            ${event.name}
+
+        </div>
+
+
+        <div class="timeline-type">
+
+            ${event.event}
+
+        </div>
+
+    `;
+
+
+    timeline.appendChild(
+        item
+    );
+
+
+    timeline.scrollTop =
+        timeline.scrollHeight;
+
+}
+
+
+
+// =========================================================
+// BUILD WORKING POPUP
+// =========================================================
+
+function buildWorkingPopup(marker) {
+
+    const facility =
+        marker.facilityData;
+
+    const icon =
+        marker.icon ||
+        getEventIcon(facility.type);
+
+    return `
+
+        <div style="min-width:180px">
+
+            <b>
+                ${icon}
+                ${facility.name}
+            </b>
+
+            <br><br>
+
+            <b>Type:</b>
+            ${facility.type}
+
+            <br>
+
+            <b>Status:</b>
+
+            <span class="status-text">
+
+                WORKING
+
+            </span>
+
+            <br><br>
+
+            <b>Right-click this marker</b>
+            to start the cascade from here.
+
+            <br><br>
+
+            <b>Latitude:</b>
+            ${facility.latitude}
+
+            <br>
+
+            <b>Longitude:</b>
+            ${facility.longitude}
+
+        </div>
+
+    `;
+
+}
+// =========================================================
+// MARK FACILITY FAILED
+// =========================================================
+
+function markFacilityFailed(event) {
+
+    const id =
+        event.node_id;
+
+
+    const marker =
+        markers[id];
+
+
+    if (!marker) {
+
+        console.warn(
+            "Marker not found:",
+            id
+        );
+
+        return;
+
+    }
+
+
+    marker.setStyle({
+
+        fillColor:
+            "#ef4444",
+
+        color:
+            "#ffffff",
+
+        weight:
+            3,
+
+        fillOpacity:
+            1
+
+    });
+
+
+    marker.setRadius(
+        10
+    );
+
+
+    marker.bindPopup(
+
+        `
+
+        <div>
+
+            <b style="color:#dc2626">
+
+                🔴 FAILED
+
+            </b>
+
+            <br><br>
+
+            <b>
+
+                ${event.name}
+
+            </b>
+
+            <br><br>
+
+            Type:
+
+            ${event.type}
+
+            <br>
+
+            Cascade step:
+
+            ${event.step}
+
+            <br>
+
+            Caused by:
+
+            ${event.source_node || "Initial event"}
+
+        </div>
+
+        `
+
+    );
+
+
+    if (
+        event.latitude !== null &&
+        event.longitude !== null
+    ) {
+
+        const pulse =
+            L.circle(
+
+                [
+                    event.latitude,
+                    event.longitude
+                ],
+
+                {
+
+                    radius: 150,
+
+                    color:
+                        "#ef4444",
+
+                    fillColor:
+                        "#ef4444",
+
+                    fillOpacity:
+                        0.08,
+
+                    weight: 2
+
+                }
+
+            ).addTo(map);
+
+
+        failedMarkers[id] =
+            pulse;
+
+    }
+
+}
+
+
+// =========================================================
+// AFFECT NEARBY ROADS
+// =========================================================
+
+function affectNearbyRoads(event) {
+
+    if (
+        event.latitude === null ||
+        event.longitude === null
+    ) {
+
+        return;
+
+    }
+
+
+    const lat =
+        event.latitude;
+
+
+    const lon =
+        event.longitude;
+
+
+    roadLayers.forEach(
+
+        item => {
+
+            const geometry =
+                item.road.geometry;
+
+
+            if (
+                !geometry ||
+                geometry.length === 0
+            ) {
+
+                return;
+
+            }
+
+
+            const first =
+                geometry[0];
+
+
+            const last =
+                geometry[
+                    geometry.length - 1
+                ];
+
+
+            const d1 =
+                distanceKm(
+
+                    lat,
+                    lon,
+
+                    first[1],
+                    first[0]
+
+                );
+
+
+            const d2 =
+                distanceKm(
+
+                    lat,
+                    lon,
+
+                    last[1],
+                    last[0]
+
+                );
+
+
+            if (
+                Math.min(d1,d2)
+                <=
+                0.5
+            ) {
+
+                item.layer.setStyle({
+
+                    color:
+                        "#f59e0b",
+
+                    opacity:
+                        0.9,
+
+                    weight:
+                        2
+
+                });
+
+            }
+
+        }
+
+    );
+
+}
+
+
+// =========================================================
+// DISTANCE
+// =========================================================
+
+function distanceKm(
+    lat1,
+    lon1,
+    lat2,
+    lon2
+) {
+
+    const R =
+        6371;
+
+
+    const dLat =
+        (
+            lat2 - lat1
+        )
+        *
+        Math.PI
+        /
+        180;
+
+
+    const dLon =
+        (
+            lon2 - lon1
+        )
+        *
+        Math.PI
+        /
+        180;
+
+
+    const a =
+
+        Math.sin(
+            dLat / 2
+        )
+        *
+        Math.sin(
+            dLat / 2
+        )
+
+        +
+
+        Math.cos(
+            lat1 *
+            Math.PI /
+            180
+        )
+
+        *
+
+        Math.cos(
+            lat2 *
+            Math.PI /
+            180
+        )
+
+        *
+
+        Math.sin(
+            dLon / 2
+        )
+        *
+        Math.sin(
+            dLon / 2
+        );
+
+
+    const c =
+        2 *
+        Math.atan2(
+
+            Math.sqrt(a),
+
+            Math.sqrt(
+                1 - a
+            )
+
+        );
+
+
+    return R * c;
+
+}
+
+
+// =========================================================
+// UPDATE METRICS
+// =========================================================
+
+function updateMetrics(step) {
+
+    const metrics =
+        getActiveMetrics();
+
+
+    document
+        .getElementById("step")
+        .innerText =
+        step;
+
+
+    if (step === 0) {
+
+        document
+            .getElementById("failed")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("hospitals")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("police")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("fire")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("schools")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("power")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("roads")
+            .innerText =
+            "0";
+
+        document
+            .getElementById("severity")
+            .innerText =
+            "0 / 100";
+
+        return;
+
+    }
+
+
+    document
+        .getElementById("failed")
+        .innerText =
+        metrics.total_failed;
+
+
+    document
+        .getElementById("hospitals")
+        .innerText =
+        metrics.failed_hospitals;
+
+
+    document
+        .getElementById("police")
+        .innerText =
+        metrics.failed_police_stations;
+
+
+    document
+        .getElementById("fire")
+        .innerText =
+        metrics.failed_fire_stations;
+
+
+    document
+        .getElementById("schools")
+        .innerText =
+        metrics.failed_schools;
+
+
+    document
+        .getElementById("power")
+        .innerText =
+        metrics.failed_power_infrastructure;
+
+
+    document
+        .getElementById("roads")
+        .innerText =
+        metrics.affected_roads;
+
+
+    document
+        .getElementById("severity")
+        .innerText =
+        metrics.severity_score
+        +
+        " / 100";
+
+}
+
+
+// =========================================================
+// RESET SIMULATION
+// =========================================================
+
+function resetSimulation() {
+
+    if (animationTimer) {
+
+        clearTimeout(
+            animationTimer
+        );
+
+        animationTimer =
+            null;
+
+    }
+
+
+    simulationRunning =
+        false;
+
+
+    currentStep =
+        0;
+
+
+    // -----------------------------------------------------
+    // RESET FACILITY MARKERS
+    // -----------------------------------------------------
+
+    Object.values(markers).forEach(
+
+        marker => {
+
+            const facility =
+                marker.facilityData;
+
+
+            let color =
+                marker.originalColor ||
+                "#22c55e";
+
+
+            marker.setStyle({
+
+                fillColor:
+                    color,
+
+                color:
+                    "#ffffff",
+
+                opacity:
+                    1,
+
+                fillOpacity:
+                    0.95,
+
+                weight:
+                    2
+
+            });
+
+
+            marker.setRadius(
+
+                marker.originalRadius ||
+                7
+
+            );
+
+
+            marker.setPopupContent(
+                buildWorkingPopup(marker)
+            );
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // RESET FAILED PULSES
+    // -----------------------------------------------------
+
+    Object.values(
+        failedMarkers
+    ).forEach(
+
+        pulse => {
+
+            map.removeLayer(
+                pulse
+            );
+
+        }
+
+    );
+
+
+    failedMarkers = {};
+
+
+    // -----------------------------------------------------
+    // RESET ROADS
+    // -----------------------------------------------------
+
+    roadLayers.forEach(
+
+        item => {
+
+            let weight = 1;
+
+
+            if (
+                item.road.highway &&
+                (
+                    item.road.highway.includes(
+                        "primary"
+                    )
+                    ||
+                    item.road.highway.includes(
+                        "trunk"
+                    )
+                    ||
+                    item.road.highway.includes(
+                        "motorway"
+                    )
+                )
+            ) {
+
+                weight = 2;
+
+            }
+
+
+            item.layer.setStyle({
+
+                color:
+                    "#2563eb",
+
+                opacity:
+                    0.35,
+
+                weight:
+                    weight
+
+            });
+
+        }
+
+    );
+
+
+    // -----------------------------------------------------
+    // RESET TIMELINE
+    // -----------------------------------------------------
+
+    const timeline =
+        document.getElementById(
+            "timeline"
+        );
+
+
+    timeline.innerHTML = `
+
+        <div class="timeline-empty">
+
+            Waiting for simulation...
+
+        </div>
+
+    `;
+
+
+    // -----------------------------------------------------
+    // RESET METRICS
+    // -----------------------------------------------------
+
+    updateMetrics(0);
+
+
+    document
+        .getElementById("status")
+        .innerText =
+        "Ready";
+
+
+    document
+        .getElementById("startBtn")
+        .disabled =
+        false;
+
+}
+
+
+// =========================================================
+// START CASCADE
+// =========================================================
+
+function startCascade() {
+
+    if (simulationRunning) {
+
+        return;
+
+    }
+
+
+    resetSimulation();
+
+
+    simulationRunning =
+        true;
+
+
+    document
+        .getElementById("startBtn")
+        .disabled =
+        true;
+
+
+    const events =
+        getActiveCascadeEvents();
+
+
+    const sortedEvents =
+        [...events].sort(
+
+            (a,b) =>
+                a.step - b.step
+
+        );
+
+
+    let index = 0;
+
+
+    function processNextEvent() {
+
+        if (
+            index >=
+            sortedEvents.length
+        ) {
+
+            finishCascade();
+
+            return;
+
+        }
+
+
+        const event =
+            sortedEvents[index];
+
+
+        currentStep =
+            event.step;
+
+
+        document
+            .getElementById("status")
+            .innerText =
+
+            "Cascade Step " +
+            event.step +
+            " — " +
+            event.event;
+
+
+        // -------------------------------------------------
+        // FAIL FACILITY
+        // -------------------------------------------------
+
+        markFacilityFailed(
+            event
+        );
+
+
+        // -------------------------------------------------
+        // ADD TIMELINE
+        // -------------------------------------------------
+
+        addTimelineEvent(
+            event
+        );
+
+
+        // -------------------------------------------------
+        // AFFECT ROADS
+        // -------------------------------------------------
+
+        affectNearbyRoads(
+            event
+        );
+
+
+        // -------------------------------------------------
+        // UPDATE METRICS
+        // -------------------------------------------------
+
+        updateMetrics(
+            event.step
+        );
+
+
+        index++;
+
+
+        animationTimer =
+            setTimeout(
+
+                processNextEvent,
+
+                1200
+
+            );
+
+    }
+
+
+    processNextEvent();
+
+}
+
+
+// =========================================================
+// FINISH CASCADE
+// =========================================================
+
+function finishCascade() {
+
+    simulationRunning =
+        false;
+
+
+    const metrics =
+        getActiveMetrics();
+
+
+    updateMetrics(
+        metrics.cascade_steps
+    );
+
+
+    document
+        .getElementById("status")
+        .innerText =
+        "🔴 CASCADE COMPLETE";
+
+
+    document
+        .getElementById("startBtn")
+        .disabled =
+        false;
+
+}
+
+
+// =========================================================
+// BUTTONS
+// =========================================================
+
+document
+    .getElementById("startBtn")
+    .addEventListener(
+
+        "click",
+
+        startCascade
+
+    );
+
+
+document
+    .getElementById("resetBtn")
+    .addEventListener(
+
+        "click",
+
+        resetSimulation
+
+    );
+
+
+// =========================================================
+// START APPLICATION
+// =========================================================
+
+loadData();
+
+
+</script>
+
+</body>
+
+</html>

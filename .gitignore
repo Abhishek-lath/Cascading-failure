@@ -1,0 +1,21 @@
+# Local/cache artifacts
+cache/
+*.before_*.html
+*.before_*.py
+json_check.txt
+
+# Large/generated optional artifacts not needed for the hosted demo
+whitefield_map.html
+whitefield_road_network.graphml
+whitefield_detailed_roads.png
+
+# Python/runtime noise
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/

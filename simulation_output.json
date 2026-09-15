@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "project": "Whitefield Cascading Failure Simulator",
+    "simulation": "Power failure cascade",
+    "initial_failure": "Hoody Power Receiving Station, KPTCL",
+    "initial_failure_id": "POWER_HOODY_001",
+    "assumption": "Facility dependencies are simulation assumptions derived from spatial proximity and criticality.",
+    "max_steps": 10
+  },
+  "initial_failure": {
+    "id": "POWER_HOODY_001",
+    "name": "Hoody Power Receiving Station, KPTCL",
+    "type": "POWER_STATION",
+    "latitude": 12.9961479,
+    "longitude": 77.7111237
+  },
+  "cascade": {
+    "steps": [
+      {
+        "step": 1,
+        "new_failures": 3,
+        "total_failed": 4,
+        "affected_roads": 8
+      },
+      {
+        "step": 2,
+        "new_failures": 0,
+        "total_failed": 4,
+        "affected_roads": 8
+      }
+    ],
+    "events": [
+      {
+        "step": 0,
+        "event": "INITIAL_FAILURE",
+        "node_id": "POWER_HOODY_001",
+        "name": "Hoody Power Receiving Station, KPTCL",
+        "type": "POWER_STATION",
+        "latitude": 12.9961479,
+        "longitude": 77.7111237
+      },
+      {
+        "step": 1,
+        "event": "CASCADE_FAILURE",
+        "node_id": "HOSPITAL_60",
+        "name": "Kids Health Link",
+        "type": "HOSPITAL",
+        "source_node": "POWER_HOODY_001",
+        "distance_m": 806.14,
+        "dependency_strength": 0.731,
+        "criticality": 1.0,
+        "latitude": 13.0031938,
+        "longitude": 77.7128759
+      },
+      {
+        "step": 1,
+        "event": "CASCADE_FAILURE",
+        "node_id": "HOSPITAL_62",
+        "name": "Amrutha Healthcare",
+        "type": "HOSPITAL",
+        "source_node": "POWER_HOODY_001",
+        "distance_m": 902.76,
+        "dependency_strength": 0.699,
+        "criticality": 1.0,
+        "latitude": 13.0042616,
+        "longitude": 77.7114153
+      },
+      {
+        "step": 1,
+        "event": "CASCADE_FAILURE",
+        "node_id": "POWER_INFRASTRUCTURE_29",
+        "name": "Hoodi Substation",
+        "type": "POWER_INFRASTRUCTURE",
+        "source_node": "POWER_HOODY_001",
+        "distance_m": 154.59,
+        "dependency_strength": 0.923,
+        "criticality": 1.0,
+        "latitude": 12.995071,
+        "longitude": 77.7120260780488
+      }
+    ]
+  },
+  "failed_facilities": [
+    {
+      "id": "HOSPITAL_62",
+      "name": "Amrutha Healthcare",
+      "type": "HOSPITAL",
+      "latitude": 13.0042616,
+      "longitude": 77.7114153,
+      "status": "FAILED",
+      "nearest_road_node": 1706630491
+    },
+    {
+      "id": "POWER_HOODY_001",
+      "name": "Hoody Power Receiving Station, KPTCL",
+      "type": "POWER_STATION",
+      "latitude": 12.9961479,
+      "longitude": 77.7111237,
+      "status": "FAILED",
+      "nearest_road_node": 10148940675
+    },
+    {
+      "id": "HOSPITAL_60",
+      "name": "Kids Health Link",
+      "type": "HOSPITAL",
+      "latitude": 13.0031938,
+      "longitude": 77.7128759,
+      "status": "FAILED",
+      "nearest_road_node": 7441913900
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_29",
+      "name": "Hoodi Substation",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.995071,
+      "longitude": 77.7120260780488,
+      "status": "FAILED",
+      "nearest_road_node": 10148940675
+    }
+  ],
+  "affected_road_nodes": [
+    "41495",
+    "11552",
+    "11548",
+    "7441913900",
+    "28006",
+    "11549",
+    "28004",
+    "1706630491"
+  ],
+  "metrics": {
+    "total_failed": 4,
+    "failed_hospitals": 2,
+    "failed_police_stations": 0,
+    "failed_fire_stations": 0,
+    "failed_schools": 0,
+    "failed_power_infrastructure": 2,
+    "affected_roads": 8,
+    "cascade_steps": 2,
+    "severity_score": 72
+  }
+}

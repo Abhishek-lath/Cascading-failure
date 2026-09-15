@@ -1,0 +1,4625 @@
+{
+  "metadata": {
+    "project": "Whitefield Cascading Failure Simulator",
+    "description": "Simulation dependency graph generated from OpenStreetMap spatial data",
+    "dependency_method": "Geographical proximity and criticality",
+    "warning": "Dependencies represent simulation assumptions and do not claim actual electrical supply relationships."
+  },
+  "power_sources": [
+    {
+      "id": "POWER_INFRASTRUCTURE_1",
+      "name": "HAL electricity grid",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9587037,
+      "longitude": 77.6660013,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_2",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9964981,
+      "longitude": 77.7277189,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_3",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9965295,
+      "longitude": 77.727912,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_4",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9873675,
+      "longitude": 77.6895767,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_5",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9572491,
+      "longitude": 77.7290748,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_6",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9572752,
+      "longitude": 77.7288991,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_7",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9573053,
+      "longitude": 77.7287409,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_8",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9942382,
+      "longitude": 77.7013223,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_9",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9638505,
+      "longitude": 77.7223438,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_10",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9639302,
+      "longitude": 77.7223331,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_11",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9714229,
+      "longitude": 77.7075715,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_12",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9713624,
+      "longitude": 77.7075725,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_13",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9641018,
+      "longitude": 77.71255,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_14",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9651224,
+      "longitude": 77.7136367,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_15",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9651903,
+      "longitude": 77.7135263,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_16",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.951476,
+      "longitude": 77.7343703,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_17",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9729164,
+      "longitude": 77.7138734,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_18",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9791357,
+      "longitude": 77.6931171,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_19",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.989064,
+      "longitude": 77.7159329,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_20",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9889962,
+      "longitude": 77.7158444,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_21",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.978151,
+      "longitude": 77.7235427,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_22",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9826688,
+      "longitude": 77.7461001,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_23",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9825538,
+      "longitude": 77.7460103,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_24",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9678797,
+      "longitude": 77.7126221,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_25",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9632604,
+      "longitude": 77.7249264,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_26",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9632532,
+      "longitude": 77.7249861,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_27",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9632561,
+      "longitude": 77.7249569,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_28",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9665244,
+      "longitude": 77.7019198,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_29",
+      "name": "Hoodi Substation",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.995071,
+      "longitude": 77.7120260780488,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_30",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9955255,
+      "longitude": 77.74782017864332,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_31",
+      "name": "EPIP Whitefield Substation",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9768512,
+      "longitude": 77.71768014156031,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_32",
+      "name": "Hoody Traction",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.99659015,
+      "longitude": 77.72779696200416,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_33",
+      "name": "Bagmane WTC",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.984669199999999,
+      "longitude": 77.69381955581,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_34",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.98879125,
+      "longitude": 77.70373951080856,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_35",
+      "name": "Kondaspura",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 13.03776825,
+      "longitude": 77.75473931613288,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_36",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.97754185,
+      "longitude": 77.66455701889419,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_37",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.98625515,
+      "longitude": 77.67443972188107,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_38",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.96996615,
+      "longitude": 77.71525223933155,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_39",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9675039,
+      "longitude": 77.72189288753246,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_40",
+      "name": "BMRCL RSS",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.988361600000001,
+      "longitude": 77.74918512639468,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_41",
+      "name": "ITPL",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.984701999999999,
+      "longitude": 77.73678715863542,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_42",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.98830905,
+      "longitude": 77.67041708735141,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_43",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.966907299999999,
+      "longitude": 77.69501534739368,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_44",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9688976,
+      "longitude": 77.74956239748738,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_45",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9680899,
+      "longitude": 77.75022494785875,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_46",
+      "name": "Prestige Tech Forest Substation",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.95169295,
+      "longitude": 77.74762853654588,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_47",
+      "name": "Prestige Shantiniketan Substation",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.98961095,
+      "longitude": 77.72636181546511,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_48",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.99546355,
+      "longitude": 77.68953835919982,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_49",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.996467899999999,
+      "longitude": 77.70277550538577,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_50",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.98463155,
+      "longitude": 77.69249734096039,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_51",
+      "name": "Brigade Tech Gardens Brookefield",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.96381425,
+      "longitude": 77.72243691580387,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_52",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.96884985,
+      "longitude": 77.70683245000001,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_53",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.97839235,
+      "longitude": 77.72966710024804,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_54",
+      "name": "ITI",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 13.005153199999999,
+      "longitude": 77.68659130424146,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_55",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.978940000000001,
+      "longitude": 77.70475971279005,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_INFRASTRUCTURE_56",
+      "name": "Unnamed POWER_INFRASTRUCTURE",
+      "type": "POWER_INFRASTRUCTURE",
+      "latitude": 12.9684508,
+      "longitude": 77.70722354377865,
+      "capacity": 100.0,
+      "source": "OSM"
+    },
+    {
+      "id": "POWER_HOODY_001",
+      "name": "Hoody Power Receiving Station, KPTCL",
+      "type": "POWER_STATION",
+      "latitude": 12.9961479,
+      "longitude": 77.7111237,
+      "capacity": 500.0,
+      "source": "PROJECT_CRITICAL_ASSET"
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_1",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 394.84,
+      "strength": 0.868,
+      "criticality": 1.0,
+      "failure_threshold": 0.697
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_2",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 919.18,
+      "strength": 0.694,
+      "criticality": 1.0,
+      "failure_threshold": 0.627
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_53",
+      "to": "HOSPITAL_3",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 314.51,
+      "strength": 0.895,
+      "criticality": 1.0,
+      "failure_threshold": 0.708
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "HOSPITAL_4",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1119.6,
+      "strength": 0.627,
+      "criticality": 1.0,
+      "failure_threshold": 0.601
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_8",
+      "to": "HOSPITAL_5",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 248.92,
+      "strength": 0.917,
+      "criticality": 1.0,
+      "failure_threshold": 0.717
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_38",
+      "to": "HOSPITAL_6",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 392.1,
+      "strength": 0.869,
+      "criticality": 1.0,
+      "failure_threshold": 0.698
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_7",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 862.88,
+      "strength": 0.712,
+      "criticality": 1.0,
+      "failure_threshold": 0.635
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_8",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2537.95,
+      "strength": 0.154,
+      "criticality": 1.0,
+      "failure_threshold": 0.412
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_9",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2071.64,
+      "strength": 0.309,
+      "criticality": 1.0,
+      "failure_threshold": 0.474
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_10",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2142.09,
+      "strength": 0.286,
+      "criticality": 1.0,
+      "failure_threshold": 0.464
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_11",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 685.63,
+      "strength": 0.771,
+      "criticality": 1.0,
+      "failure_threshold": 0.659
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_41",
+      "to": "HOSPITAL_12",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 629.1,
+      "strength": 0.79,
+      "criticality": 1.0,
+      "failure_threshold": 0.666
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_17",
+      "to": "HOSPITAL_13",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 578.19,
+      "strength": 0.807,
+      "criticality": 1.0,
+      "failure_threshold": 0.673
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "HOSPITAL_14",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1665.05,
+      "strength": 0.445,
+      "criticality": 1.0,
+      "failure_threshold": 0.528
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_15",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 598.78,
+      "strength": 0.8,
+      "criticality": 1.0,
+      "failure_threshold": 0.67
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "HOSPITAL_16",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 797.48,
+      "strength": 0.734,
+      "criticality": 1.0,
+      "failure_threshold": 0.644
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "HOSPITAL_17",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2156.47,
+      "strength": 0.281,
+      "criticality": 1.0,
+      "failure_threshold": 0.462
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_4",
+      "to": "HOSPITAL_18",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 202.98,
+      "strength": 0.932,
+      "criticality": 1.0,
+      "failure_threshold": 0.723
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_19",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 894.93,
+      "strength": 0.702,
+      "criticality": 1.0,
+      "failure_threshold": 0.631
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_20",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1000.26,
+      "strength": 0.667,
+      "criticality": 1.0,
+      "failure_threshold": 0.617
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "HOSPITAL_21",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 935.62,
+      "strength": 0.688,
+      "criticality": 1.0,
+      "failure_threshold": 0.625
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_46",
+      "to": "HOSPITAL_22",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 866.84,
+      "strength": 0.711,
+      "criticality": 1.0,
+      "failure_threshold": 0.634
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_46",
+      "to": "HOSPITAL_23",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 830.53,
+      "strength": 0.723,
+      "criticality": 1.0,
+      "failure_threshold": 0.639
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_24",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 808.0,
+      "strength": 0.731,
+      "criticality": 1.0,
+      "failure_threshold": 0.642
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_25",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1631.43,
+      "strength": 0.456,
+      "criticality": 1.0,
+      "failure_threshold": 0.532
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "HOSPITAL_26",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2833.86,
+      "strength": 0.1,
+      "criticality": 1.0,
+      "failure_threshold": 0.39
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_27",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 789.33,
+      "strength": 0.737,
+      "criticality": 1.0,
+      "failure_threshold": 0.645
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_4",
+      "to": "HOSPITAL_28",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 479.52,
+      "strength": 0.84,
+      "criticality": 1.0,
+      "failure_threshold": 0.686
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "HOSPITAL_29",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1279.43,
+      "strength": 0.574,
+      "criticality": 1.0,
+      "failure_threshold": 0.579
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_30",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1404.0,
+      "strength": 0.532,
+      "criticality": 1.0,
+      "failure_threshold": 0.563
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_31",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1277.23,
+      "strength": 0.574,
+      "criticality": 1.0,
+      "failure_threshold": 0.58
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_32",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 864.06,
+      "strength": 0.712,
+      "criticality": 1.0,
+      "failure_threshold": 0.635
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_14",
+      "to": "HOSPITAL_33",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 153.29,
+      "strength": 0.949,
+      "criticality": 1.0,
+      "failure_threshold": 0.73
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "HOSPITAL_34",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1090.77,
+      "strength": 0.636,
+      "criticality": 1.0,
+      "failure_threshold": 0.605
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_35",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1299.27,
+      "strength": 0.567,
+      "criticality": 1.0,
+      "failure_threshold": 0.577
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_36",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1483.54,
+      "strength": 0.505,
+      "criticality": 1.0,
+      "failure_threshold": 0.552
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "HOSPITAL_37",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2181.86,
+      "strength": 0.273,
+      "criticality": 1.0,
+      "failure_threshold": 0.459
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "HOSPITAL_38",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2132.15,
+      "strength": 0.289,
+      "criticality": 1.0,
+      "failure_threshold": 0.466
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_39",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1183.84,
+      "strength": 0.605,
+      "criticality": 1.0,
+      "failure_threshold": 0.592
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_40",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 984.26,
+      "strength": 0.672,
+      "criticality": 1.0,
+      "failure_threshold": 0.619
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_41",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1205.12,
+      "strength": 0.598,
+      "criticality": 1.0,
+      "failure_threshold": 0.589
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_42",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2364.61,
+      "strength": 0.212,
+      "criticality": 1.0,
+      "failure_threshold": 0.435
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_43",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1227.3,
+      "strength": 0.591,
+      "criticality": 1.0,
+      "failure_threshold": 0.586
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_18",
+      "to": "HOSPITAL_44",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1543.86,
+      "strength": 0.485,
+      "criticality": 1.0,
+      "failure_threshold": 0.544
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "HOSPITAL_45",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2343.3,
+      "strength": 0.219,
+      "criticality": 1.0,
+      "failure_threshold": 0.438
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_46",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1056.88,
+      "strength": 0.648,
+      "criticality": 1.0,
+      "failure_threshold": 0.609
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "HOSPITAL_47",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1112.17,
+      "strength": 0.629,
+      "criticality": 1.0,
+      "failure_threshold": 0.602
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_48",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1198.05,
+      "strength": 0.601,
+      "criticality": 1.0,
+      "failure_threshold": 0.59
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "HOSPITAL_49",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 225.5,
+      "strength": 0.925,
+      "criticality": 1.0,
+      "failure_threshold": 0.72
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "HOSPITAL_50",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 820.09,
+      "strength": 0.727,
+      "criticality": 1.0,
+      "failure_threshold": 0.641
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "HOSPITAL_51",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 711.06,
+      "strength": 0.763,
+      "criticality": 1.0,
+      "failure_threshold": 0.655
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_52",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2327.31,
+      "strength": 0.224,
+      "criticality": 1.0,
+      "failure_threshold": 0.44
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "HOSPITAL_53",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 938.56,
+      "strength": 0.687,
+      "criticality": 1.0,
+      "failure_threshold": 0.625
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_54",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 362.77,
+      "strength": 0.879,
+      "criticality": 1.0,
+      "failure_threshold": 0.702
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "HOSPITAL_56",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1230.84,
+      "strength": 0.59,
+      "criticality": 1.0,
+      "failure_threshold": 0.586
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_57",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 464.44,
+      "strength": 0.845,
+      "criticality": 1.0,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_58",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1277.79,
+      "strength": 0.574,
+      "criticality": 1.0,
+      "failure_threshold": 0.58
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_59",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1341.98,
+      "strength": 0.553,
+      "criticality": 1.0,
+      "failure_threshold": 0.571
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "HOSPITAL_60",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 806.14,
+      "strength": 0.731,
+      "criticality": 1.0,
+      "failure_threshold": 0.643
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "HOSPITAL_61",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 607.68,
+      "strength": 0.797,
+      "criticality": 1.0,
+      "failure_threshold": 0.669
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "HOSPITAL_62",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 902.76,
+      "strength": 0.699,
+      "criticality": 1.0,
+      "failure_threshold": 0.63
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "HOSPITAL_63",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 537.55,
+      "strength": 0.821,
+      "criticality": 1.0,
+      "failure_threshold": 0.678
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_7",
+      "to": "HOSPITAL_64",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 789.87,
+      "strength": 0.737,
+      "criticality": 1.0,
+      "failure_threshold": 0.645
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_5",
+      "to": "HOSPITAL_65",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 192.22,
+      "strength": 0.936,
+      "criticality": 1.0,
+      "failure_threshold": 0.724
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "HOSPITAL_66",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 30.63,
+      "strength": 0.99,
+      "criticality": 1.0,
+      "failure_threshold": 0.746
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_46",
+      "to": "HOSPITAL_67",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 871.37,
+      "strength": 0.71,
+      "criticality": 1.0,
+      "failure_threshold": 0.634
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_55",
+      "to": "HOSPITAL_68",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 516.45,
+      "strength": 0.828,
+      "criticality": 1.0,
+      "failure_threshold": 0.681
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_21",
+      "to": "HOSPITAL_69",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 329.61,
+      "strength": 0.89,
+      "criticality": 1.0,
+      "failure_threshold": 0.706
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_47",
+      "to": "HOSPITAL_70",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 414.58,
+      "strength": 0.862,
+      "criticality": 1.0,
+      "failure_threshold": 0.695
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_53",
+      "to": "HOSPITAL_71",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 324.45,
+      "strength": 0.892,
+      "criticality": 1.0,
+      "failure_threshold": 0.707
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_34",
+      "to": "HOSPITAL_72",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 496.52,
+      "strength": 0.834,
+      "criticality": 1.0,
+      "failure_threshold": 0.684
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_73",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 773.94,
+      "strength": 0.742,
+      "criticality": 1.0,
+      "failure_threshold": 0.647
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_74",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 772.65,
+      "strength": 0.742,
+      "criticality": 1.0,
+      "failure_threshold": 0.647
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_53",
+      "to": "HOSPITAL_75",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 315.66,
+      "strength": 0.895,
+      "criticality": 1.0,
+      "failure_threshold": 0.708
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_76",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1236.82,
+      "strength": 0.588,
+      "criticality": 1.0,
+      "failure_threshold": 0.585
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "HOSPITAL_77",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 402.02,
+      "strength": 0.866,
+      "criticality": 1.0,
+      "failure_threshold": 0.696
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_22",
+      "to": "HOSPITAL_78",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 187.31,
+      "strength": 0.938,
+      "criticality": 1.0,
+      "failure_threshold": 0.725
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_79",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 460.41,
+      "strength": 0.847,
+      "criticality": 1.0,
+      "failure_threshold": 0.689
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_43",
+      "to": "HOSPITAL_80",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 561.66,
+      "strength": 0.813,
+      "criticality": 1.0,
+      "failure_threshold": 0.675
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_34",
+      "to": "HOSPITAL_81",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 468.14,
+      "strength": 0.844,
+      "criticality": 1.0,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_46",
+      "to": "HOSPITAL_82",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 769.33,
+      "strength": 0.744,
+      "criticality": 1.0,
+      "failure_threshold": 0.647
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "HOSPITAL_83",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 95.38,
+      "strength": 0.968,
+      "criticality": 1.0,
+      "failure_threshold": 0.737
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_47",
+      "to": "HOSPITAL_84",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 286.56,
+      "strength": 0.904,
+      "criticality": 1.0,
+      "failure_threshold": 0.712
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_18",
+      "to": "HOSPITAL_85",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 680.6,
+      "strength": 0.773,
+      "criticality": 1.0,
+      "failure_threshold": 0.659
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "HOSPITAL_86",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 258.92,
+      "strength": 0.914,
+      "criticality": 1.0,
+      "failure_threshold": 0.715
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "HOSPITAL_87",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 7.29,
+      "strength": 0.998,
+      "criticality": 1.0,
+      "failure_threshold": 0.749
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_88",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 462.39,
+      "strength": 0.846,
+      "criticality": 1.0,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_41",
+      "to": "HOSPITAL_89",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 508.62,
+      "strength": 0.83,
+      "criticality": 1.0,
+      "failure_threshold": 0.682
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_46",
+      "to": "HOSPITAL_90",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 814.85,
+      "strength": 0.728,
+      "criticality": 1.0,
+      "failure_threshold": 0.641
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_38",
+      "to": "HOSPITAL_91",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 419.91,
+      "strength": 0.86,
+      "criticality": 1.0,
+      "failure_threshold": 0.694
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "HOSPITAL_92",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 700.02,
+      "strength": 0.767,
+      "criticality": 1.0,
+      "failure_threshold": 0.657
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "HOSPITAL_93",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 808.82,
+      "strength": 0.73,
+      "criticality": 1.0,
+      "failure_threshold": 0.642
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "HOSPITAL_94",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2383.95,
+      "strength": 0.205,
+      "criticality": 1.0,
+      "failure_threshold": 0.432
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_39",
+      "to": "HOSPITAL_95",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 427.5,
+      "strength": 0.858,
+      "criticality": 1.0,
+      "failure_threshold": 0.693
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_41",
+      "to": "HOSPITAL_96",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 587.27,
+      "strength": 0.804,
+      "criticality": 1.0,
+      "failure_threshold": 0.672
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "POLICE_STATION_1",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1078.72,
+      "strength": 0.64,
+      "criticality": 0.9,
+      "failure_threshold": 0.606
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "POLICE_STATION_2",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 163.78,
+      "strength": 0.945,
+      "criticality": 0.9,
+      "failure_threshold": 0.728
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "POLICE_STATION_3",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1831.06,
+      "strength": 0.39,
+      "criticality": 0.9,
+      "failure_threshold": 0.506
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "POLICE_STATION_4",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 450.79,
+      "strength": 0.85,
+      "criticality": 0.9,
+      "failure_threshold": 0.69
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "POLICE_STATION_5",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 462.43,
+      "strength": 0.846,
+      "criticality": 0.9,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "POLICE_STATION_6",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1024.21,
+      "strength": 0.659,
+      "criticality": 0.9,
+      "failure_threshold": 0.613
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "POLICE_STATION_7",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1865.58,
+      "strength": 0.378,
+      "criticality": 0.9,
+      "failure_threshold": 0.501
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "POLICE_STATION_8",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 811.81,
+      "strength": 0.729,
+      "criticality": 0.9,
+      "failure_threshold": 0.642
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "POLICE_STATION_9",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 742.88,
+      "strength": 0.752,
+      "criticality": 0.9,
+      "failure_threshold": 0.651
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "POLICE_STATION_10",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 389.0,
+      "strength": 0.87,
+      "criticality": 0.9,
+      "failure_threshold": 0.698
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "POLICE_STATION_11",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 454.95,
+      "strength": 0.848,
+      "criticality": 0.9,
+      "failure_threshold": 0.689
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "POLICE_STATION_12",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 839.32,
+      "strength": 0.72,
+      "criticality": 0.9,
+      "failure_threshold": 0.638
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "FIRE_STATION_1",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 874.52,
+      "strength": 0.708,
+      "criticality": 1.0,
+      "failure_threshold": 0.633
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "FIRE_STATION_2",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 236.85,
+      "strength": 0.921,
+      "criticality": 1.0,
+      "failure_threshold": 0.718
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_41",
+      "to": "FIRE_STATION_3",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 586.11,
+      "strength": 0.805,
+      "criticality": 1.0,
+      "failure_threshold": 0.672
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_20",
+      "to": "SCHOOL_1",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 492.86,
+      "strength": 0.803,
+      "criticality": 0.5,
+      "failure_threshold": 0.671
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_19",
+      "to": "SCHOOL_2",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 492.95,
+      "strength": 0.803,
+      "criticality": 0.5,
+      "failure_threshold": 0.671
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_3",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 512.24,
+      "strength": 0.795,
+      "criticality": 0.5,
+      "failure_threshold": 0.668
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_4",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1152.1,
+      "strength": 0.539,
+      "criticality": 0.5,
+      "failure_threshold": 0.566
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_26",
+      "to": "SCHOOL_5",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 709.39,
+      "strength": 0.716,
+      "criticality": 0.5,
+      "failure_threshold": 0.636
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_6",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 672.21,
+      "strength": 0.731,
+      "criticality": 0.5,
+      "failure_threshold": 0.642
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_21",
+      "to": "SCHOOL_7",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 163.82,
+      "strength": 0.934,
+      "criticality": 0.5,
+      "failure_threshold": 0.724
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "SCHOOL_8",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 391.79,
+      "strength": 0.843,
+      "criticality": 0.5,
+      "failure_threshold": 0.687
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_9",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2251.03,
+      "strength": 0.1,
+      "criticality": 0.5,
+      "failure_threshold": 0.39
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_10",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 449.27,
+      "strength": 0.82,
+      "criticality": 0.5,
+      "failure_threshold": 0.678
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_11",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1485.13,
+      "strength": 0.406,
+      "criticality": 0.5,
+      "failure_threshold": 0.512
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_12",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 792.28,
+      "strength": 0.683,
+      "criticality": 0.5,
+      "failure_threshold": 0.623
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_53",
+      "to": "SCHOOL_13",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 515.8,
+      "strength": 0.794,
+      "criticality": 0.5,
+      "failure_threshold": 0.667
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_14",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1343.18,
+      "strength": 0.463,
+      "criticality": 0.5,
+      "failure_threshold": 0.535
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "SCHOOL_15",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 768.61,
+      "strength": 0.693,
+      "criticality": 0.5,
+      "failure_threshold": 0.627
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "SCHOOL_16",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 456.92,
+      "strength": 0.817,
+      "criticality": 0.5,
+      "failure_threshold": 0.677
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_17",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 453.05,
+      "strength": 0.819,
+      "criticality": 0.5,
+      "failure_threshold": 0.678
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_22",
+      "to": "SCHOOL_20",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 604.43,
+      "strength": 0.758,
+      "criticality": 0.5,
+      "failure_threshold": 0.653
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_21",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 376.43,
+      "strength": 0.849,
+      "criticality": 0.5,
+      "failure_threshold": 0.69
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_22",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1632.67,
+      "strength": 0.347,
+      "criticality": 0.5,
+      "failure_threshold": 0.489
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_23",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1263.07,
+      "strength": 0.495,
+      "criticality": 0.5,
+      "failure_threshold": 0.548
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_24",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2000.36,
+      "strength": 0.2,
+      "criticality": 0.5,
+      "failure_threshold": 0.43
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_25",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 277.33,
+      "strength": 0.889,
+      "criticality": 0.5,
+      "failure_threshold": 0.706
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_11",
+      "to": "SCHOOL_26",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 269.61,
+      "strength": 0.892,
+      "criticality": 0.5,
+      "failure_threshold": 0.707
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "SCHOOL_27",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 160.24,
+      "strength": 0.936,
+      "criticality": 0.5,
+      "failure_threshold": 0.724
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_15",
+      "to": "SCHOOL_28",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 32.55,
+      "strength": 0.987,
+      "criticality": 0.5,
+      "failure_threshold": 0.745
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_15",
+      "to": "SCHOOL_29",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 11.16,
+      "strength": 0.996,
+      "criticality": 0.5,
+      "failure_threshold": 0.748
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_14",
+      "to": "SCHOOL_30",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 317.79,
+      "strength": 0.873,
+      "criticality": 0.5,
+      "failure_threshold": 0.699
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_31",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1152.12,
+      "strength": 0.539,
+      "criticality": 0.5,
+      "failure_threshold": 0.566
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "SCHOOL_32",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 539.21,
+      "strength": 0.784,
+      "criticality": 0.5,
+      "failure_threshold": 0.664
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_25",
+      "to": "SCHOOL_33",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 117.5,
+      "strength": 0.953,
+      "criticality": 0.5,
+      "failure_threshold": 0.731
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_53",
+      "to": "SCHOOL_34",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 460.07,
+      "strength": 0.816,
+      "criticality": 0.5,
+      "failure_threshold": 0.676
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_24",
+      "to": "SCHOOL_35",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 276.45,
+      "strength": 0.889,
+      "criticality": 0.5,
+      "failure_threshold": 0.706
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "SCHOOL_36",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1163.63,
+      "strength": 0.535,
+      "criticality": 0.5,
+      "failure_threshold": 0.564
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_25",
+      "to": "SCHOOL_37",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 194.46,
+      "strength": 0.922,
+      "criticality": 0.5,
+      "failure_threshold": 0.719
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_34",
+      "to": "SCHOOL_38",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 432.24,
+      "strength": 0.827,
+      "criticality": 0.5,
+      "failure_threshold": 0.681
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "SCHOOL_39",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 816.46,
+      "strength": 0.673,
+      "criticality": 0.5,
+      "failure_threshold": 0.619
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_16",
+      "to": "SCHOOL_40",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 690.51,
+      "strength": 0.724,
+      "criticality": 0.5,
+      "failure_threshold": 0.64
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_41",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 289.94,
+      "strength": 0.884,
+      "criticality": 0.5,
+      "failure_threshold": 0.704
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_42",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 555.46,
+      "strength": 0.778,
+      "criticality": 0.5,
+      "failure_threshold": 0.661
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "SCHOOL_43",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 583.5,
+      "strength": 0.767,
+      "criticality": 0.5,
+      "failure_threshold": 0.657
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_44",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 196.75,
+      "strength": 0.921,
+      "criticality": 0.5,
+      "failure_threshold": 0.719
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_5",
+      "to": "SCHOOL_45",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 308.65,
+      "strength": 0.877,
+      "criticality": 0.5,
+      "failure_threshold": 0.701
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_46",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 849.52,
+      "strength": 0.66,
+      "criticality": 0.5,
+      "failure_threshold": 0.614
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "SCHOOL_47",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 764.22,
+      "strength": 0.694,
+      "criticality": 0.5,
+      "failure_threshold": 0.628
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_48",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 637.54,
+      "strength": 0.745,
+      "criticality": 0.5,
+      "failure_threshold": 0.648
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "SCHOOL_49",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 445.99,
+      "strength": 0.822,
+      "criticality": 0.5,
+      "failure_threshold": 0.679
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_50",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1493.71,
+      "strength": 0.403,
+      "criticality": 0.5,
+      "failure_threshold": 0.511
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_51",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 339.51,
+      "strength": 0.864,
+      "criticality": 0.5,
+      "failure_threshold": 0.696
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_52",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2425.74,
+      "strength": 0.1,
+      "criticality": 0.5,
+      "failure_threshold": 0.39
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_8",
+      "to": "SCHOOL_53",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 638.79,
+      "strength": 0.744,
+      "criticality": 0.5,
+      "failure_threshold": 0.648
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_56",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1114.37,
+      "strength": 0.554,
+      "criticality": 0.5,
+      "failure_threshold": 0.572
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_57",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1518.88,
+      "strength": 0.392,
+      "criticality": 0.5,
+      "failure_threshold": 0.507
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_58",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1652.91,
+      "strength": 0.339,
+      "criticality": 0.5,
+      "failure_threshold": 0.486
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_59",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1389.03,
+      "strength": 0.444,
+      "criticality": 0.5,
+      "failure_threshold": 0.528
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_60",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1649.28,
+      "strength": 0.34,
+      "criticality": 0.5,
+      "failure_threshold": 0.486
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_61",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1226.18,
+      "strength": 0.51,
+      "criticality": 0.5,
+      "failure_threshold": 0.554
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_62",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 280.02,
+      "strength": 0.888,
+      "criticality": 0.5,
+      "failure_threshold": 0.705
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_63",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 800.88,
+      "strength": 0.68,
+      "criticality": 0.5,
+      "failure_threshold": 0.622
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "SCHOOL_64",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 697.05,
+      "strength": 0.721,
+      "criticality": 0.5,
+      "failure_threshold": 0.638
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_65",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 533.13,
+      "strength": 0.787,
+      "criticality": 0.5,
+      "failure_threshold": 0.665
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_18",
+      "to": "SCHOOL_66",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1132.96,
+      "strength": 0.547,
+      "criticality": 0.5,
+      "failure_threshold": 0.569
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "SCHOOL_67",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1190.68,
+      "strength": 0.524,
+      "criticality": 0.5,
+      "failure_threshold": 0.559
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_29",
+      "to": "SCHOOL_68",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 714.57,
+      "strength": 0.714,
+      "criticality": 0.5,
+      "failure_threshold": 0.636
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "SCHOOL_69",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 739.5,
+      "strength": 0.704,
+      "criticality": 0.5,
+      "failure_threshold": 0.632
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_39",
+      "to": "SCHOOL_70",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 673.58,
+      "strength": 0.731,
+      "criticality": 0.5,
+      "failure_threshold": 0.642
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_43",
+      "to": "SCHOOL_71",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 681.31,
+      "strength": 0.727,
+      "criticality": 0.5,
+      "failure_threshold": 0.641
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "SCHOOL_72",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 252.53,
+      "strength": 0.899,
+      "criticality": 0.5,
+      "failure_threshold": 0.71
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_73",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1087.68,
+      "strength": 0.565,
+      "criticality": 0.5,
+      "failure_threshold": 0.576
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "SCHOOL_74",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 855.27,
+      "strength": 0.658,
+      "criticality": 0.5,
+      "failure_threshold": 0.613
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_75",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1186.38,
+      "strength": 0.525,
+      "criticality": 0.5,
+      "failure_threshold": 0.56
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_76",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1222.78,
+      "strength": 0.511,
+      "criticality": 0.5,
+      "failure_threshold": 0.554
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "SCHOOL_77",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 910.75,
+      "strength": 0.636,
+      "criticality": 0.5,
+      "failure_threshold": 0.604
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_78",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 717.16,
+      "strength": 0.713,
+      "criticality": 0.5,
+      "failure_threshold": 0.635
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_7",
+      "to": "SCHOOL_79",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 844.33,
+      "strength": 0.662,
+      "criticality": 0.5,
+      "failure_threshold": 0.615
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_11",
+      "to": "SCHOOL_80",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 372.85,
+      "strength": 0.851,
+      "criticality": 0.5,
+      "failure_threshold": 0.69
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_19",
+      "to": "SCHOOL_81",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 394.52,
+      "strength": 0.842,
+      "criticality": 0.5,
+      "failure_threshold": 0.687
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_9",
+      "to": "SCHOOL_82",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 546.07,
+      "strength": 0.782,
+      "criticality": 0.5,
+      "failure_threshold": 0.663
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_83",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 639.28,
+      "strength": 0.744,
+      "criticality": 0.5,
+      "failure_threshold": 0.648
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_43",
+      "to": "SCHOOL_84",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1590.63,
+      "strength": 0.364,
+      "criticality": 0.5,
+      "failure_threshold": 0.495
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_20",
+      "to": "SCHOOL_85",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 404.49,
+      "strength": 0.838,
+      "criticality": 0.5,
+      "failure_threshold": 0.685
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_13",
+      "to": "SCHOOL_86",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 69.08,
+      "strength": 0.972,
+      "criticality": 0.5,
+      "failure_threshold": 0.739
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_20",
+      "to": "SCHOOL_87",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 666.61,
+      "strength": 0.733,
+      "criticality": 0.5,
+      "failure_threshold": 0.643
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_14",
+      "to": "SCHOOL_88",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 596.43,
+      "strength": 0.761,
+      "criticality": 0.5,
+      "failure_threshold": 0.655
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_29",
+      "to": "SCHOOL_89",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 678.34,
+      "strength": 0.729,
+      "criticality": 0.5,
+      "failure_threshold": 0.641
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_36",
+      "to": "SCHOOL_91",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 977.33,
+      "strength": 0.609,
+      "criticality": 0.5,
+      "failure_threshold": 0.594
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "SCHOOL_92",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 116.88,
+      "strength": 0.953,
+      "criticality": 0.5,
+      "failure_threshold": 0.731
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "SCHOOL_94",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2189.47,
+      "strength": 0.124,
+      "criticality": 0.5,
+      "failure_threshold": 0.4
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_95",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 800.53,
+      "strength": 0.68,
+      "criticality": 0.5,
+      "failure_threshold": 0.622
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_7",
+      "to": "SCHOOL_96",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1018.53,
+      "strength": 0.593,
+      "criticality": 0.5,
+      "failure_threshold": 0.587
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "SCHOOL_99",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 400.22,
+      "strength": 0.84,
+      "criticality": 0.5,
+      "failure_threshold": 0.686
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_4",
+      "to": "SCHOOL_100",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 604.33,
+      "strength": 0.758,
+      "criticality": 0.5,
+      "failure_threshold": 0.653
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "SCHOOL_102",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1133.23,
+      "strength": 0.547,
+      "criticality": 0.5,
+      "failure_threshold": 0.569
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_103",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 801.3,
+      "strength": 0.679,
+      "criticality": 0.5,
+      "failure_threshold": 0.622
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_104",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1010.3,
+      "strength": 0.596,
+      "criticality": 0.5,
+      "failure_threshold": 0.588
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "SCHOOL_105",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 471.3,
+      "strength": 0.811,
+      "criticality": 0.5,
+      "failure_threshold": 0.675
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_4",
+      "to": "SCHOOL_106",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 798.69,
+      "strength": 0.681,
+      "criticality": 0.5,
+      "failure_threshold": 0.622
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_26",
+      "to": "SCHOOL_107",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1134.51,
+      "strength": 0.546,
+      "criticality": 0.5,
+      "failure_threshold": 0.568
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_30",
+      "to": "SCHOOL_108",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 815.54,
+      "strength": 0.674,
+      "criticality": 0.5,
+      "failure_threshold": 0.62
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_40",
+      "to": "SCHOOL_109",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 661.98,
+      "strength": 0.735,
+      "criticality": 0.5,
+      "failure_threshold": 0.644
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_11",
+      "to": "SCHOOL_110",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 310.75,
+      "strength": 0.876,
+      "criticality": 0.5,
+      "failure_threshold": 0.7
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "SCHOOL_111",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2257.97,
+      "strength": 0.1,
+      "criticality": 0.5,
+      "failure_threshold": 0.39
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "SCHOOL_112",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2181.25,
+      "strength": 0.127,
+      "criticality": 0.5,
+      "failure_threshold": 0.401
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_113",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 388.11,
+      "strength": 0.845,
+      "criticality": 0.5,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "SCHOOL_114",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 459.47,
+      "strength": 0.816,
+      "criticality": 0.5,
+      "failure_threshold": 0.676
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "SCHOOL_115",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2159.89,
+      "strength": 0.136,
+      "criticality": 0.5,
+      "failure_threshold": 0.404
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "SCHOOL_116",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1827.57,
+      "strength": 0.269,
+      "criticality": 0.5,
+      "failure_threshold": 0.458
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_117",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1923.01,
+      "strength": 0.231,
+      "criticality": 0.5,
+      "failure_threshold": 0.442
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_118",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2110.3,
+      "strength": 0.156,
+      "criticality": 0.5,
+      "failure_threshold": 0.412
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_119",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1673.97,
+      "strength": 0.33,
+      "criticality": 0.5,
+      "failure_threshold": 0.482
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_120",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2162.57,
+      "strength": 0.135,
+      "criticality": 0.5,
+      "failure_threshold": 0.404
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_121",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 838.64,
+      "strength": 0.665,
+      "criticality": 0.5,
+      "failure_threshold": 0.616
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_122",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1110.63,
+      "strength": 0.556,
+      "criticality": 0.5,
+      "failure_threshold": 0.572
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_123",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1102.05,
+      "strength": 0.559,
+      "criticality": 0.5,
+      "failure_threshold": 0.574
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_135",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2339.11,
+      "strength": 0.1,
+      "criticality": 0.5,
+      "failure_threshold": 0.39
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "SCHOOL_137",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1629.5,
+      "strength": 0.348,
+      "criticality": 0.5,
+      "failure_threshold": 0.489
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_138",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1372.82,
+      "strength": 0.451,
+      "criticality": 0.5,
+      "failure_threshold": 0.53
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_139",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1415.09,
+      "strength": 0.434,
+      "criticality": 0.5,
+      "failure_threshold": 0.524
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "SCHOOL_140",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1204.85,
+      "strength": 0.518,
+      "criticality": 0.5,
+      "failure_threshold": 0.557
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_18",
+      "to": "SCHOOL_141",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 177.83,
+      "strength": 0.929,
+      "criticality": 0.5,
+      "failure_threshold": 0.722
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_142",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1472.96,
+      "strength": 0.411,
+      "criticality": 0.5,
+      "failure_threshold": 0.514
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_43",
+      "to": "SCHOOL_143",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1417.4,
+      "strength": 0.433,
+      "criticality": 0.5,
+      "failure_threshold": 0.523
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_144",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 825.35,
+      "strength": 0.67,
+      "criticality": 0.5,
+      "failure_threshold": 0.618
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_145",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 503.42,
+      "strength": 0.799,
+      "criticality": 0.5,
+      "failure_threshold": 0.669
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_146",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 387.09,
+      "strength": 0.845,
+      "criticality": 0.5,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_1",
+      "to": "SCHOOL_147",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1619.86,
+      "strength": 0.352,
+      "criticality": 0.5,
+      "failure_threshold": 0.491
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "SCHOOL_148",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 388.65,
+      "strength": 0.845,
+      "criticality": 0.5,
+      "failure_threshold": 0.688
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_40",
+      "to": "SCHOOL_149",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1119.26,
+      "strength": 0.552,
+      "criticality": 0.5,
+      "failure_threshold": 0.571
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "SCHOOL_150",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2174.72,
+      "strength": 0.13,
+      "criticality": 0.5,
+      "failure_threshold": 0.402
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_35",
+      "to": "SCHOOL_151",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2089.38,
+      "strength": 0.164,
+      "criticality": 0.5,
+      "failure_threshold": 0.416
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "SCHOOL_153",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 661.26,
+      "strength": 0.735,
+      "criticality": 0.5,
+      "failure_threshold": 0.644
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_8",
+      "to": "SCHOOL_154",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 687.91,
+      "strength": 0.725,
+      "criticality": 0.5,
+      "failure_threshold": 0.64
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "SCHOOL_159",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 2068.94,
+      "strength": 0.172,
+      "criticality": 0.5,
+      "failure_threshold": 0.419
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "SCHOOL_160",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 877.98,
+      "strength": 0.649,
+      "criticality": 0.5,
+      "failure_threshold": 0.61
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_34",
+      "to": "SCHOOL_161",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 554.9,
+      "strength": 0.778,
+      "criticality": 0.5,
+      "failure_threshold": 0.661
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "SCHOOL_162",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 604.67,
+      "strength": 0.758,
+      "criticality": 0.5,
+      "failure_threshold": 0.653
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_54",
+      "to": "SCHOOL_163",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 1468.73,
+      "strength": 0.413,
+      "criticality": 0.5,
+      "failure_threshold": 0.515
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_20",
+      "to": "SCHOOL_164",
+      "type": "POWER_DEPENDENCY",
+      "distance_m": 547.09,
+      "strength": 0.781,
+      "criticality": 0.5,
+      "failure_threshold": 0.662
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "POWER_INFRASTRUCTURE_2",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 13.28,
+      "strength": 0.993,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_32",
+      "to": "POWER_INFRASTRUCTURE_3",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 14.17,
+      "strength": 0.993,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_50",
+      "to": "POWER_INFRASTRUCTURE_4",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 438.97,
+      "strength": 0.781,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_6",
+      "to": "POWER_INFRASTRUCTURE_5",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 19.26,
+      "strength": 0.99,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_7",
+      "to": "POWER_INFRASTRUCTURE_6",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 17.47,
+      "strength": 0.991,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_6",
+      "to": "POWER_INFRASTRUCTURE_7",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 17.47,
+      "strength": 0.991,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_49",
+      "to": "POWER_INFRASTRUCTURE_8",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 293.7,
+      "strength": 0.853,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_10",
+      "to": "POWER_INFRASTRUCTURE_9",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 8.94,
+      "strength": 0.996,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_9",
+      "to": "POWER_INFRASTRUCTURE_10",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 8.94,
+      "strength": 0.996,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_12",
+      "to": "POWER_INFRASTRUCTURE_11",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 6.73,
+      "strength": 0.997,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_11",
+      "to": "POWER_INFRASTRUCTURE_12",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 6.73,
+      "strength": 0.997,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_15",
+      "to": "POWER_INFRASTRUCTURE_13",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 160.75,
+      "strength": 0.92,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_15",
+      "to": "POWER_INFRASTRUCTURE_14",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 14.15,
+      "strength": 0.993,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_14",
+      "to": "POWER_INFRASTRUCTURE_15",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 14.15,
+      "strength": 0.993,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_5",
+      "to": "POWER_INFRASTRUCTURE_16",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 861.04,
+      "strength": 0.569,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_38",
+      "to": "POWER_INFRASTRUCTURE_17",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 360.47,
+      "strength": 0.82,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_50",
+      "to": "POWER_INFRASTRUCTURE_18",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 614.79,
+      "strength": 0.693,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_20",
+      "to": "POWER_INFRASTRUCTURE_19",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 12.2,
+      "strength": 0.994,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_19",
+      "to": "POWER_INFRASTRUCTURE_20",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 12.2,
+      "strength": 0.994,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_31",
+      "to": "POWER_INFRASTRUCTURE_21",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 651.47,
+      "strength": 0.674,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "POWER_INFRASTRUCTURE_22",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 16.07,
+      "strength": 0.992,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_22",
+      "to": "POWER_INFRASTRUCTURE_23",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 16.07,
+      "strength": 0.992,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_15",
+      "to": "POWER_INFRASTRUCTURE_24",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 314.69,
+      "strength": 0.843,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_27",
+      "to": "POWER_INFRASTRUCTURE_25",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 3.34,
+      "strength": 0.998,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_27",
+      "to": "POWER_INFRASTRUCTURE_26",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 3.18,
+      "strength": 0.998,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_26",
+      "to": "POWER_INFRASTRUCTURE_27",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 3.18,
+      "strength": 0.998,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_52",
+      "to": "POWER_INFRASTRUCTURE_28",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 591.81,
+      "strength": 0.704,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_HOODY_001",
+      "to": "POWER_INFRASTRUCTURE_29",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 154.59,
+      "strength": 0.923,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_40",
+      "to": "POWER_INFRASTRUCTURE_30",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 810.2,
+      "strength": 0.595,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_17",
+      "to": "POWER_INFRASTRUCTURE_31",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 601.31,
+      "strength": 0.699,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_2",
+      "to": "POWER_INFRASTRUCTURE_32",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 13.28,
+      "strength": 0.993,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_50",
+      "to": "POWER_INFRASTRUCTURE_33",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 143.33,
+      "strength": 0.928,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_8",
+      "to": "POWER_INFRASTRUCTURE_34",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 659.87,
+      "strength": 0.67,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "POWER_INFRASTRUCTURE_36",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 1355.21,
+      "strength": 0.322,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_42",
+      "to": "POWER_INFRASTRUCTURE_37",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 492.07,
+      "strength": 0.754,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_17",
+      "to": "POWER_INFRASTRUCTURE_38",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 360.47,
+      "strength": 0.82,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_10",
+      "to": "POWER_INFRASTRUCTURE_39",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 400.23,
+      "strength": 0.8,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_22",
+      "to": "POWER_INFRASTRUCTURE_40",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 715.85,
+      "strength": 0.642,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_23",
+      "to": "POWER_INFRASTRUCTURE_41",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 1027.5,
+      "strength": 0.486,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_37",
+      "to": "POWER_INFRASTRUCTURE_42",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 492.07,
+      "strength": 0.754,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_28",
+      "to": "POWER_INFRASTRUCTURE_43",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 749.37,
+      "strength": 0.625,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_45",
+      "to": "POWER_INFRASTRUCTURE_44",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 114.98,
+      "strength": 0.943,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_44",
+      "to": "POWER_INFRASTRUCTURE_45",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 114.98,
+      "strength": 0.943,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_16",
+      "to": "POWER_INFRASTRUCTURE_46",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 1436.95,
+      "strength": 0.282,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_2",
+      "to": "POWER_INFRASTRUCTURE_47",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 779.8,
+      "strength": 0.61,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_4",
+      "to": "POWER_INFRASTRUCTURE_48",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 900.25,
+      "strength": 0.55,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_8",
+      "to": "POWER_INFRASTRUCTURE_49",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 293.7,
+      "strength": 0.853,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_33",
+      "to": "POWER_INFRASTRUCTURE_50",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 143.33,
+      "strength": 0.928,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_9",
+      "to": "POWER_INFRASTRUCTURE_51",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 10.87,
+      "strength": 0.995,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_56",
+      "to": "POWER_INFRASTRUCTURE_52",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 61.36,
+      "strength": 0.969,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_21",
+      "to": "POWER_INFRASTRUCTURE_53",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 664.15,
+      "strength": 0.668,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_48",
+      "to": "POWER_INFRASTRUCTURE_54",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 1123.76,
+      "strength": 0.438,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_11",
+      "to": "POWER_INFRASTRUCTURE_55",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 889.66,
+      "strength": 0.555,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    },
+    {
+      "from": "POWER_INFRASTRUCTURE_52",
+      "to": "POWER_INFRASTRUCTURE_56",
+      "type": "POWER_NETWORK_DEPENDENCY",
+      "distance_m": 61.36,
+      "strength": 0.969,
+      "criticality": 1.0,
+      "failure_threshold": 0.6
+    }
+  ],
+  "facility_road_links": [
+    {
+      "facility_id": "HOSPITAL_1",
+      "road_node": 324638198,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_2",
+      "road_node": 980049650,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_3",
+      "road_node": 251104952,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_4",
+      "road_node": 1707853698,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_5",
+      "road_node": 331152607,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_6",
+      "road_node": 251103712,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_7",
+      "road_node": 6528219621,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_8",
+      "road_node": 11385489238,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_9",
+      "road_node": 11436626722,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_10",
+      "road_node": 6144122443,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_11",
+      "road_node": 1837297461,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_12",
+      "road_node": 11028255656,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_13",
+      "road_node": 997847035,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_14",
+      "road_node": 5283775012,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_15",
+      "road_node": 324660201,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_16",
+      "road_node": 7398254471,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_17",
+      "road_node": 1570459899,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_18",
+      "road_node": 1568919865,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_19",
+      "road_node": 13991711483,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_20",
+      "road_node": 1483859311,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_21",
+      "road_node": 442438343,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_22",
+      "road_node": 1016228534,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_23",
+      "road_node": 1368117363,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_24",
+      "road_node": 7172733741,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_25",
+      "road_node": 4528702017,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_26",
+      "road_node": 10115843747,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_27",
+      "road_node": 10095754908,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_28",
+      "road_node": 11840492579,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_29",
+      "road_node": 1266397217,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_30",
+      "road_node": 10091276537,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_31",
+      "road_node": 6528219631,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_32",
+      "road_node": 1569015352,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_33",
+      "road_node": 325198177,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_34",
+      "road_node": 10089270947,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_35",
+      "road_node": 13988514246,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_36",
+      "road_node": 7485669330,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_37",
+      "road_node": 7354402539,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_38",
+      "road_node": 7262753689,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_39",
+      "road_node": 7480011386,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_40",
+      "road_node": 10091276566,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_41",
+      "road_node": 7480011326,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_42",
+      "road_node": 5330660369,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_43",
+      "road_node": 1572423914,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_44",
+      "road_node": 1371947879,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_45",
+      "road_node": 570496163,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_46",
+      "road_node": 1568959747,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_47",
+      "road_node": 5330463378,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_48",
+      "road_node": 7480011385,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_49",
+      "road_node": 7111334266,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_50",
+      "road_node": 10038921427,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_51",
+      "road_node": 828421460,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_52",
+      "road_node": 1570461805,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_53",
+      "road_node": 2446054168,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_54",
+      "road_node": 1534842191,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_55",
+      "road_node": 7404820681,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_56",
+      "road_node": 1446278512,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_57",
+      "road_node": 1534836232,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_58",
+      "road_node": 7478132662,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_59",
+      "road_node": 11013528521,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_60",
+      "road_node": 7441913900,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_61",
+      "road_node": 11397332313,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_62",
+      "road_node": 1706630491,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_63",
+      "road_node": 256093219,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_64",
+      "road_node": 1368672365,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_65",
+      "road_node": 6911835052,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_66",
+      "road_node": 331146203,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_67",
+      "road_node": 9900960143,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_68",
+      "road_node": 10651190554,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_69",
+      "road_node": 9942257298,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_70",
+      "road_node": 12078798115,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_71",
+      "road_node": 1631443495,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_72",
+      "road_node": 5692639491,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_73",
+      "road_node": 7187815387,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_74",
+      "road_node": 1603476996,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_75",
+      "road_node": 10744702175,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_76",
+      "road_node": 6528219631,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_77",
+      "road_node": 6141717325,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_78",
+      "road_node": 1605954226,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_79",
+      "road_node": 1078717650,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_80",
+      "road_node": 7463270461,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_81",
+      "road_node": 378714706,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_82",
+      "road_node": 1016228526,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_83",
+      "road_node": 845774833,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_84",
+      "road_node": 12078798115,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_85",
+      "road_node": 5968463120,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_86",
+      "road_node": 1376905664,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_87",
+      "road_node": 10056189410,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_88",
+      "road_node": 10081533743,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_89",
+      "road_node": 955696066,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_90",
+      "road_node": 10284858598,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_91",
+      "road_node": 1371869030,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_92",
+      "road_node": 6144271381,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_93",
+      "road_node": 1603476996,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_94",
+      "road_node": 11409131969,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_95",
+      "road_node": 10182066699,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "HOSPITAL_96",
+      "road_node": 955696066,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_1",
+      "road_node": 343334152,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_2",
+      "road_node": 12683889003,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_3",
+      "road_node": 3130783234,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_4",
+      "road_node": 10291078941,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_5",
+      "road_node": 1115282643,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_6",
+      "road_node": 6884290656,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_7",
+      "road_node": 1386031797,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_8",
+      "road_node": 13991711488,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_9",
+      "road_node": 1485730751,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_10",
+      "road_node": 10081331116,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_11",
+      "road_node": 1115282643,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "POLICE_STATION_12",
+      "road_node": 13991711488,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "FIRE_STATION_1",
+      "road_node": 11409552694,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "FIRE_STATION_2",
+      "road_node": 10038856355,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "FIRE_STATION_3",
+      "road_node": 1382528610,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_1",
+      "road_node": 960318288,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_2",
+      "road_node": 11190286657,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_3",
+      "road_node": 5725792773,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_4",
+      "road_node": 766836758,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_5",
+      "road_node": 11074670573,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_6",
+      "road_node": 1558993952,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_7",
+      "road_node": 9942257297,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_8",
+      "road_node": 7466456019,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_9",
+      "road_node": 7485457393,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_10",
+      "road_node": 1371807570,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_11",
+      "road_node": 6141709147,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_12",
+      "road_node": 1492407663,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_13",
+      "road_node": 3957948342,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_14",
+      "road_node": 6888027941,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_15",
+      "road_node": 3933073639,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_16",
+      "road_node": 1533848370,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_17",
+      "road_node": 1507064166,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_18",
+      "road_node": 7258768913,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_19",
+      "road_node": 11900650072,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_20",
+      "road_node": 11375356861,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_21",
+      "road_node": 10091505351,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_22",
+      "road_node": 7485669310,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_23",
+      "road_node": 1438379064,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_24",
+      "road_node": 7485669276,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_25",
+      "road_node": 324659979,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_26",
+      "road_node": 1029243562,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_27",
+      "road_node": 10089237119,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_28",
+      "road_node": 1371859144,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_29",
+      "road_node": 1371859164,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_30",
+      "road_node": 1285577034,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_31",
+      "road_node": 10208990783,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_32",
+      "road_node": 6458192257,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_33",
+      "road_node": 9949757512,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_34",
+      "road_node": 9992581197,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_35",
+      "road_node": 990022927,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_36",
+      "road_node": 7263225184,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_37",
+      "road_node": 11370592015,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_38",
+      "road_node": 5330485027,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_39",
+      "road_node": 253448524,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_40",
+      "road_node": 7298289244,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_41",
+      "road_node": 1367922212,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_42",
+      "road_node": 253448537,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_43",
+      "road_node": 11169596337,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_44",
+      "road_node": 253448561,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_45",
+      "road_node": 7298289306,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_46",
+      "road_node": 980049650,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_47",
+      "road_node": 11169596337,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_48",
+      "road_node": 2287631121,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_49",
+      "road_node": 7466456019,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_50",
+      "road_node": 6141709147,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_51",
+      "road_node": 1989629220,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_52",
+      "road_node": 10091257417,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_53",
+      "road_node": 6956715233,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_54",
+      "road_node": 4973437524,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_55",
+      "road_node": 343338295,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_56",
+      "road_node": 7172948982,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_57",
+      "road_node": 442438363,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_58",
+      "road_node": 10091321448,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_59",
+      "road_node": 7409492841,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_60",
+      "road_node": 13996966933,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_61",
+      "road_node": 2653581157,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_62",
+      "road_node": 7483900601,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_63",
+      "road_node": 10088635245,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_64",
+      "road_node": 4161879677,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_65",
+      "road_node": 10991651169,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_66",
+      "road_node": 7463013511,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_67",
+      "road_node": 6528217681,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_68",
+      "road_node": 5544275840,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_69",
+      "road_node": 13251122098,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_70",
+      "road_node": 10744702152,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_71",
+      "road_node": 442438130,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_72",
+      "road_node": 4703745970,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_73",
+      "road_node": 11402513505,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_74",
+      "road_node": 331146193,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_75",
+      "road_node": 10038829373,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_76",
+      "road_node": 10038829385,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_77",
+      "road_node": 1569120624,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_78",
+      "road_node": 1131338736,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_79",
+      "road_node": 1454644897,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_80",
+      "road_node": 12211266270,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_81",
+      "road_node": 13122917611,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_82",
+      "road_node": 329220819,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_83",
+      "road_node": 13655652480,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_84",
+      "road_node": 5318035144,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_85",
+      "road_node": 1173923375,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_86",
+      "road_node": 316039644,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_87",
+      "road_node": 10091255345,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_88",
+      "road_node": 1382502133,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_89",
+      "road_node": 5544275838,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_90",
+      "road_node": 7260479440,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_91",
+      "road_node": 4161879561,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_92",
+      "road_node": 1338425088,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_93",
+      "road_node": 1562816229,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_94",
+      "road_node": 7354402725,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_95",
+      "road_node": 13925823134,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_96",
+      "road_node": 1454644888,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_97",
+      "road_node": 7205588820,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_98",
+      "road_node": 7429013846,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_99",
+      "road_node": 11840845635,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_100",
+      "road_node": 3049417905,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_101",
+      "road_node": 7371227277,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_102",
+      "road_node": 7441776500,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_103",
+      "road_node": 7398254556,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_104",
+      "road_node": 13925823134,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_105",
+      "road_node": 2319911124,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_106",
+      "road_node": 13253856821,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_107",
+      "road_node": 9841504889,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_108",
+      "road_node": 7398254471,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_109",
+      "road_node": 6746682761,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_110",
+      "road_node": 4159737404,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_111",
+      "road_node": 7354402644,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_112",
+      "road_node": 11176532315,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_113",
+      "road_node": 1371814223,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_114",
+      "road_node": 7453315740,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_115",
+      "road_node": 7089141281,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_116",
+      "road_node": 7357950198,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_117",
+      "road_node": 1573479278,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_118",
+      "road_node": 10091476987,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_119",
+      "road_node": 7372739583,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_120",
+      "road_node": 1572978281,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_121",
+      "road_node": 1572384368,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_122",
+      "road_node": 1573022441,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_123",
+      "road_node": 7175180652,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_124",
+      "road_node": 7404820642,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_125",
+      "road_node": 10173387277,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_126",
+      "road_node": 1572983769,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_127",
+      "road_node": 10017912935,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_128",
+      "road_node": 3544504290,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_129",
+      "road_node": 3544504268,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_130",
+      "road_node": 7146346074,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_131",
+      "road_node": 1960748910,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_132",
+      "road_node": 7371051132,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_133",
+      "road_node": 13065271324,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_134",
+      "road_node": 10017816747,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_135",
+      "road_node": 7409460641,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_136",
+      "road_node": 7466199242,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_137",
+      "road_node": 10208848352,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_138",
+      "road_node": 5330504362,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_139",
+      "road_node": 2410756542,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_140",
+      "road_node": 5725636241,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_141",
+      "road_node": 12073275107,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_142",
+      "road_node": 1569089721,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_143",
+      "road_node": 320627088,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_144",
+      "road_node": 11002822400,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_145",
+      "road_node": 1446267676,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_146",
+      "road_node": 6162793148,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_147",
+      "road_node": 1371947682,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_148",
+      "road_node": 2287630914,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_149",
+      "road_node": 1327387701,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_150",
+      "road_node": 11455070861,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_151",
+      "road_node": 7262753695,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_152",
+      "road_node": 10206571479,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_153",
+      "road_node": 6894178972,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_154",
+      "road_node": 10038550480,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_155",
+      "road_node": 3544504240,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_156",
+      "road_node": 7466199670,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_157",
+      "road_node": 7482957175,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_158",
+      "road_node": 9956733479,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_159",
+      "road_node": 1529101117,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_160",
+      "road_node": 13944712005,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_161",
+      "road_node": 7462795240,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_162",
+      "road_node": 13948081471,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_163",
+      "road_node": 13965192990,
+      "type": "ROAD_ACCESS"
+    },
+    {
+      "facility_id": "SCHOOL_164",
+      "road_node": 960318289,
+      "type": "ROAD_ACCESS"
+    }
+  ],
+  "critical_power_road": {
+    "facility_id": "POWER_HOODY_001",
+    "road_node": 10148940675,
+    "type": "POWER_ROAD_ACCESS"
+  }
+}
