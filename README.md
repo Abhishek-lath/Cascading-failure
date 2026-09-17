@@ -9,7 +9,7 @@ The simulator visualizes roads, hospitals, schools, police stations, fire statio
 After GitHub Pages is enabled, the site will be available at:
 
 ```text
-https://YOUR_GITHUB_USERNAME.github.io/whitefield-cascading-failure-simulator/
+https://abhishek-lath.github.io/Cascading-failure/
 ```
 
 ## Features
